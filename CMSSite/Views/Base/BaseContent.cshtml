@@ -1,0 +1,30 @@
+﻿@{
+    var _page = ViewBag.content as ContentPage;
+    //   var imageUrl = _page.Picture.Link;
+    //   if (string.IsNullOrEmpty(imageUrl))
+    //   {
+    //       if (_page.Documents.Any())
+    //       {
+    //           imageUrl = _page.Documents.FirstOrDefault().Link;
+    //       }
+    //   }
+    //
+    //   if (!string.IsNullOrEmpty(imageUrl))
+    //   {
+    //       imageUrl = SessionRequest.config.ImageUrl + imageUrl;
+    //   }
+    var url = Context.Request.Path.Value.ToLower();
+}
+
+@if (_page.TemplateType == TemplateType.BlogDetail || _page.TemplateType == TemplateType.BlogList    || _page.TemplateType == TemplateType.PageHor || _page.TemplateType == TemplateType.PageVer || _page.TemplateType == TemplateType.Contact    || _page.TemplateType == TemplateType.HtmlRaw)
+{
+    @:@await Component.InvokeAsync("ContentView", new { TemplateType = _page.TemplateType })
+}
+else
+{
+    @:@await Component.InvokeAsync("SectionView", new { type = _page.TemplateType.ToStr().ToString(), viewType = (_page.IsSideMenu.GetValueOrDefault(true) ? "Single" : "List") })
+}
+
+
+
+

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "69piKsJQwF1j72dXKeE9hDqIAIz8ENmDo2sGj0tjj2GNPaOt+ucZUCKLFnDUTtwHlYzMD+C/OKdBGY6Waulv8g==",
+  "success": true,
+  "projectFilePath": "E:\\projeler\\bitbucketRepos\\AYDIN\\MailService\\MailService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Zon\\.nuget\\packages\\system.linq.dynamic.core\\1.0.19\\system.linq.dynamic.core.1.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

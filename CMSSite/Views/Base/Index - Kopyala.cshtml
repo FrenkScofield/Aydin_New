@@ -1,0 +1,638 @@
+﻿@{
+    Layout = "_Layout";
+    var Pages = ViewBag.Pages as List<ContentPage>;
+    var content = ViewBag.currContent as ContentPage;
+
+}
+
+<!-- Showcase Section -->
+<section class="showcase-style-2">
+    <div class="container-fluid">
+        <div class="slider-wrapper">
+
+            @foreach (var item in Pages.Where(x => x.ContentTypesId == 4 && x.IsDeleted == null))
+            {
+                if (item.BannerImage != null)
+                {
+                    if (item.BannerImage.Link.Contains(".mp4"))
+                    {
+                        <div class="slider-item vidoe-bg">
+                            <div class="v-container">
+                                <video src="@("http://eyuboglucms.hybro.systems/fileupload/UserFiles/Folders/"+(item.BannerImage!=null?item.BannerImage.Link:"default.jpg"))" autoplay="true" loop="true" class="myVideoBg"></video>
+                            </div>
+
+                            <div class="content">
+                                <div class="main-content">
+                                    <div class="heading">
+                                        <h1>@item.Name</h1>
+                                        @if (!string.IsNullOrEmpty(item.Description))
+                                        {
+                                            <p class="d-none d-md-block sub-title">
+                                                @Html.Raw(item.Description)
+                                            </p>
+                                        }
+                                        <div class="btns">
+                                            <a href="" class="main-btn">@item.ContentShort</a>
+                                            <button id="open-video-popup" class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="slider-item" style="background-image: url(@("http://eyuboglucms.hybro.systems/fileupload/UserFiles/Folders/"+(item.BannerImage!=null?item.BannerImage.Link:"default.jpg") )">
+                            <div class="content">
+                                <div class="main-content">
+                                    <div class="heading">
+                                        <h1>@item.Name</h1>
+                                        @if (!string.IsNullOrEmpty(item.Description))
+                                        {
+                                            <p class="d-none d-md-block sub-title" style="color:#fff !important">
+                                                @Html.Raw(item.Description)
+                                            </p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    }
+                }
+            }
+            @*<div class="slider-item vidoe-bg">
+                    <div class="v-container">
+                        <video src="assets/img/videos/university.mp4" autoplay="true" loop="true" class="myVideoBg"></video>
+                    </div>
+                    <div class="content">
+                        <div class="main-content">
+                            <div class="heading">
+                                <h1>For a better and smarter education experience.</h1>
+                                <div class="btns">
+                                    <a href="" class="main-btn">Explore</a>
+                                    <button id="open-video-popup" class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>*@
+        </div>
+        <div class="side-social-icons hide-md-and-down">
+            <a target="_blank" href="https://www.facebook.com/EgitimEyuboglu"><i class="fab fa-facebook-square"></i></a>
+            <a target="_blank" href="https://www.instagram.com/EgitimEyuboglu/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://twitter.com/EyubogluEgitim"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://tr.linkedin.com/company/egitimeyuboglu"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="scroll-next hide-md-and-down">
+            <div class="chevrons">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+        <div class="indicator-style-2">
+            <i class="flaticon-back"></i>
+            <div class="nums">
+                <div class="current">01</div>
+                <div class="total"></div>
+            </div>
+            <i class="flaticon-next"></i>
+        </div>
+    </div>
+</section>
+
+<!-- video popup -->
+<div class="video-popup">
+    <div class="video-popup-wrapper">
+        <div class="v-container">
+            <div class="close-popup">
+                <i class="fas fa-times"></i>
+            </div>
+            <video src="/uploads/gozlemevi son.mp4" id="myVideo"></video>
+            <div class="video-bar">
+                <div class="passed"></div>
+            </div>
+            <div class="buttons">
+                <button id="play-pause">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="sound-toggler">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button id="share-toggler">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+            </div>
+            <div class="share">
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.facebook.com/EgitimEyuboglu"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/EgitimEyuboglu/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/EyubogluEgitim"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://tr.linkedin.com/company/egitimeyuboglu"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@foreach (var item in Pages.Where(x => x.ContentTypesId == 6).OrderBy(o => o.OrderNo))
+{
+    @Html.Raw(item.Description)
+    @Html.Raw(item.ContentShort)
+    @Html.Raw(item.ContentData)
+}
+
+
+
+
+<!-- Events Section -->
+<section id="events" class="events-section section" style="background: #e9f0f4;">
+    <!-- Side Icons -->
+    <div class="fixed-right d-flex flex-column justify-content-around align-items-center side-form-icons">
+        <i class="fas fa-phone icon" id="open-opening-popup"></i>
+        <i class="fas fa-map-marker-alt icon" id="open-location-popup"></i>
+        <i class="fas fa-envelope icon" id="open-form-popup"></i>
+    </div>
+    <div class="container">
+        <h2 class="margin-bottom-50">Etkinlikler</h2>
+        @{ var classEvent = "odd-event";
+
+        }
+        @foreach (var item in Pages.Where(x => x.ContentPageId == 30).OrderByDescending(o => o.Id).Take(2))
+        {
+            <div class="row event-item-style-1 @classEvent">
+                <div class="col-5 col-lg-2 date">
+                    <h1>@(string.IsNullOrEmpty(item.StartDate.ToString())?"": item.StartDate.Day.ToString())</h1>
+                    <h5>@(string.IsNullOrEmpty(item.StartDate.ToString())?"": item.StartDate.ToString("MMMM").Substring(0, 3).ToUpper()) @(string.IsNullOrEmpty(item.StartDate.ToString())?"": item.StartDate.Year.ToString())</h5>
+                </div>
+                <div class="col-7 col-md-6 col-lg-3 media">
+                    <img src="@("http://eyuboglucms.hybro.systems/fileupload/UserFiles/Folders/"+(item.ThumbImage!=null?item.ThumbImage.Link:"default.jpg"))" alt="events image"
+                         class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-7 details">
+                    <h3>@item.Name</h3>
+                    <p>
+                        @Html.Raw(item.ContentShort)
+                    </p>
+                    @*<div class="d-flex align-items-center event-infos">
+                            <div class="info">
+                                <i class="fas fa-clock"></i>
+                                <span>All Day</span>
+                            </div>
+                            <div class="info ml-5">
+                                <i class="fas fa-users"></i>
+                                <span>207</span>
+                            </div>
+                            <div class="info ml-5">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Port Louis, Mauritius</span>
+                            </div>
+                        </div>*@
+                    <a href="/@item.Link"><button class="main-btn">Devamı</button></a>
+                </div>
+            </div>
+            @if (classEvent == "odd-event")
+            {
+                classEvent = "even-event";
+            }
+            else
+            {
+                classEvent = "odd-event";
+            }
+        }
+
+
+        <div class="view-more text-center">
+            <a href="/Etkinlikler">Tümünü Gör</a>
+        </div>
+    </div>
+</section>
+<!-- Popup -->
+<div class="side-form-popup">
+    <div class="popup-wrapper">
+        <div class="center-popup">
+            <div class="opening-popup">
+                <div class="close-popup">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-8 media">
+                        <img src="assets/img/University/students/adolescent-adorable-alone.png" alt="media"
+                             class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-4 content">
+                        <h5>Opening hours</h5>
+                        <div class="openings">
+                            <div class="opening opening-days">
+                                <p class="day">Monday</p>
+                                <div class="divider"></div>
+                                <p class="day">Friday</p>
+                            </div>
+                            <div class="opening opening-time">
+                                <p class="time">08.00 am</p>
+                                <div class="divider"></div>
+                                <p class="time">16.00 pm</p>
+                            </div>
+                        </div>
+                        <p class="num">+24 45 15 62 129</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-popup">
+                <div class="close-popup">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-8 media">
+                        <div id="location-map"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 content">
+                        <h5>Address</h5>
+                        <p class="address">2, Ave Manchester, Lorem ipsum St, Rio Danubin</p>
+                        <button class="main-btn">Open in Maps</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-popup">
+                <div class="close-popup">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-7 content">
+                        <h4>You have a question for us?</h4>
+                        <p>leave your message below or email us at info@eyuboglu.com.tr</p>
+                        <form class="text-left form-style-2">
+                            <div class="form-group required">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" class="form-control" name="email"
+                                       placeholder="johnLP12@gmail.com" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <input type="text" id="message" class="form-control" name="name"
+                                       placeholder="Hello, I wanted to know about this particular course called..." />
+                                <span class="small-text">120 characters left</span>
+                            </div>
+                            <button class="main-btn" type="submit">Send message</button>
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-5 media">
+                        <img src="assets/img/University/Coming_soon/ambar-simpang.png"
+                             alt="media image" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Reviews Section -->
+<section class="section testimonials-style-3" style="margin-bottom: 70px !important;margin-top: 60px !important;">
+    <div class="container">
+        <h2 class="col-indigo text-center" style="margin-left: -40%; margin-bottom: 30px;">Dünya İnsanı Olmak...</h2>
+        <div class="testimonial">
+            <div class="testimonial-slider-wrapper">
+                <div class="testimonial-slider" style="background-image: url(assets/img/main/story2.jpg)">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>Çağla Damla</h5>
+                        <span>L2 Theory of Knowledge</span>
+                        <img src="assets/img/icons/caro-bac.png" alt="''">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at ullamcorper orci
+                            ullamcorper ut. Integer vehicula iaculis risus, non consequat eros tincidunt ac. Morbi a aliquam tortor.
+                            Nam
+                            convallis vestibulum nisi, sit amet fermentum libero scelerisque id. Integer iaculis mollis justo, sed
+                            interdum ligula auctor in.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-slider" style="background-image: url(assets/img/main/tolgap.jpg)">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>Tolga Pamir</h5>
+                        <span>99 Mezunu</span>
+                        <img src="assets/img/icons/caro-bac.png" alt="''">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at ullamcorper orci
+                            ullamcorper ut. Integer vehicula iaculis risus, non consequat eros tincidunt ac. Morbi a aliquam tortor.
+                            Nam
+                            convallis vestibulum nisi, sit amet fermentum libero scelerisque id. Integer iaculis mollis justo, sed
+                            interdum ligula auctor in.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-slider" style="background-image: url(assets/img/University/Homepage_5/beard-boy-casual.png)">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h5>William Edwards</h5>
+                        <span>BA Hons Project Management</span>
+                        <img src="assets/img/icons/caro-bac.png" alt="''">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at ullamcorper orci
+                            ullamcorper ut. Integer vehicula iaculis risus, non consequat eros tincidunt ac. Morbi a aliquam tortor.
+                            Nam
+                            convallis vestibulum nisi, sit amet fermentum libero .
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-slider" style="background-image: url(assets/img/University/Homepage_5/beard-boy-casual.png)">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <h5>William Edwards</h5>
+                        <span>BA Hons Project Management</span>
+                        <img src="assets/img/icons/caro-bac.png" alt="''">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at ullamcorper orci
+                            ullamcorper ut. Integer vehicula iaculis risus, non consequat eros tincidunt ac. Morbi a aliquam tortor.
+                            Nam
+                            convallis vestibulum nisi, sit amet fermentum libero scelerisque id. Integer iaculis mollis justo, sed
+                            interdum ligula auctor in.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-slider" style="background-image: url(assets/img/University/Homepage_5/beard-boy-casual.png)">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <h5>William Edwards</h5>
+                        <span>BA Hons Project Management</span>
+                        <img src="assets/img/icons/caro-bac.png" alt="''">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at ullamcorper orci
+                            ullamcorper ut. Integer vehicula iaculis risus, non consequat eros tincidunt ac. Morbi a aliquam tortor.
+                            Nam
+                            convallis vestibulum nisi, sit amet fermentum libero scelerisque id. Integer iaculis mollis justo, sed
+                            interdum ligula auctor in.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="lg-text">Stories</h1>
+        <div class="carousel-controlar">
+            <svg class="icon prev" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.7 61.19"
+                 style="enable-background:new 0 0 7.7 61.19;" xml:space="preserve">
+            <polygon points="7,5.9 4,1.4 1,5.9 3.5,5.9 3.5,60.15 4.5,60.15 4.5,5.9 " />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </svg>
+
+            <svg class="icon next" version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.7 61.19"
+                 style="enable-background:new 0 0 7.7 61.19;" xml:space="preserve">
+            <polygon points="1,55.65 4,60.15 7,55.65 4.5,55.65 4.5,1.4 3.5,1.4 3.5,55.65 " />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </svg>
+        </div>
+        <div class="pegination-wrapper d-none d-xl-block">
+            <div class="pagination-style-3">
+                <h1 class="current">01</h1>
+                <h5 class="total"></h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog-section ">
+    <div class="container">
+        <h2 class="text-left">Eyüboğlu'nda Hayat...</h2>
+        <div class="blog-carousel-wrap">
+            <div class="blog-carousel-controls hide-md-and-down">
+                <div class="dots"></div>
+            </div>
+            <div class="blog-carousel-01">
+                @foreach (var item in Pages.Where(x => x.ContentPageId == 7).OrderByDescending(o => o.Id).Take(2))
+                {
+                    <div class="single-blog-grid-item-01">
+                        <div class="thumb">
+                            <img src="@("http://eyuboglucms.hybro.systems/fileupload/UserFiles/Folders/"+(item.ThumbImage!=null?item.ThumbImage.Link:"default.jpg"))"
+                                 alt="blog image">
+                            <div class="hover">
+                                <a href="/@item.Link" class="readmore"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span class="time">@item.Parent.Name</span>
+                            <h4 class="title">
+                                <a href="/@item.Link">
+                                    @item.Name
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+
+                }
+
+
+            </div>
+            <h1 class="rotated-text hide-md-and-down">BLOG</h1>
+        </div>
+        <a class="main-btn" href="/blog"> <button class="main-btn">Tümünü Gör</button></a>
+    </div>
+</section>
+
+
+
+<!-- testimonial carousel area start -->
+<section class="testimonial-carousel-area" style="background: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="testimonial-style-1 white-bg">
+                    <div class="section-title with-icon">
+                        <h3 class="title">Akreditasyonlar</h3>
+                    </div>
+                    <div class="testimonial-slider-arrows"></div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="testimonial-thumbnail-slider">
+                                <div class="single-testimonial-thumb">
+                                    <div class="img-wrap">
+                                        <div class="img"
+                                             style="background-image: url(assets/img/main/ib.jpg)"></div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial-thumb">
+                                    <div class="img-wrap">
+                                        <div class="img"
+                                             style="background-image: url(assets/img/main/cis2.png)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial-thumb">
+                                    <div class="img-wrap">
+                                        <div class="img"
+                                             style="background-image: url(assets/img/main/toefl.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial-thumb">
+                                    <div class="img-wrap">
+                                        <div class="img"
+                                             style="background-image: url(assets/img/main/toob.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial-thumb">
+                                    <div class="img-wrap">
+                                        <div class="img"
+                                             style="background-image: url(assets/img/main/ib.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial-thumb">
+                                    <div class="img-wrap">
+                                        <div class="img"
+                                             style="background-image: url(assets/img/main/cis2.png)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-description-slider">
+                        <div class="single-testimonial-item">
+                            <p>
+                                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at
+                                ullamcorper orci ullamcorper ut. Integer is mollis justo, sed interdum ligula
+                                auctor in.
+                            </p>
+                            <div class="author-meta">
+                                <h4 class="title"><strong>IB</strong><span class="divider"> | </span><span class="designation">International Baccalaureate</span></h4>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>
+                                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at
+                                ullamcorper orci ullamcorper ut. Integer vehicula iaculis risus, non consequat eros
+                                tincidunt ac. Morbi a aliquam tortor. Nam convallis vestibulum nisi, sit amet
+                                fermentum libero scelerisque id. Integer iaculis mollis justo, sed interdum ligula
+                                auctor in.
+                            </p>
+                            <div class="author-meta">
+                                <h4 class="title"><strong>CIS</strong><span class="divider"> | </span><span class="designation">Counsil of International School</span></h4>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>
+                                orper ut. Integer vehicula iaculis risus, non consequat eros
+                                tincidunt ac. Morbi a aliquam tortor. Nam convallis vestibulum nisi, sit amet
+                                fermentum libero scelerisque id. Integer iaculis mollis justo, sed interdum ligula
+                                auctor in.
+                            </p>
+                            <div class="author-meta">
+                                <h4 class="title"><strong>Toefl</strong><span class="divider"> | </span><span class="designation">Test of English as a Foreign Language</span></h4>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>
+                                4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at
+                                ullamcorper orci ullamcorper ut. Integer vehicula iaculis risus, non consequat eros
+                                tincidunt ac. Morbi a aliquam tortor. Nam convallis vestibulum nisi, sit amet
+                                fermentum libero scelerisque id. Integer iaculis mollis justo, sed interdum ligula
+                                auctor in.
+                            </p>
+                            <div class="author-meta">
+                                <h4 class="title"><strong>TÖZOK</strong><span class="divider"> | </span><span class="designation">Türkiye Özel Okullar Birliği</span></h4>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>
+                                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at
+                                ullamcorper orci ullamcorper ut. Integer is mollis justo, sed interdum ligula
+                                auctor in.
+                            </p>
+                            <div class="author-meta">
+                                <h4 class="title"><strong>IB</strong><span class="divider"> | </span><span class="designation">International Baccalaureate</span></h4>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>
+                                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus augue nibh, at
+                                ullamcorper orci ullamcorper ut. Integer vehicula iaculis risus, non consequat eros
+                                tincidunt ac. Morbi a aliquam tortor. Nam convallis vestibulum nisi, sit amet
+                                fermentum libero scelerisque id. Integer iaculis mollis justo, sed interdum ligula
+                                auctor in.
+                            </p>
+                            <div class="author-meta">
+                                <h4 class="title"><strong>CIS</strong><span class="divider"> | </span><span class="designation">Counsil of International School</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Become an instructor -->
+<div class="opportunity-section" style="background: #e9f0f4;">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-9 content" style="margin-top: 30px;margin-bottom: 30px;">
+                <h2 class="margin-bottom-20">Whould like to become an instructor?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in velit odio. Morbi sodales nisi nec tortor
+                    commodo, malesuada fermentum magna faucibus. Proin fringilla ante lacus, eu condimentum est rutrum eget.
+                    Vestibulum molestie at sapien sed facilisis.
+                </p>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-md-center btn">
+                <div class="main-btn">Get Started</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $(".navbar-style-2").addClass("navar-style-2-home");
+    })
+
+</script>

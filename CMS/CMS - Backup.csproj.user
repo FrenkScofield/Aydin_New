@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
+<<<<<<< HEAD
+    <ShowAllFiles>false</ShowAllFiles>
+=======
+    <ShowAllFiles>true</ShowAllFiles>
+    <ActiveDebugProfile>CMS</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+>>>>>>> c1abf8e825075dbf9e85e92c8097d1f0dd30b871
+  </PropertyGroup>
+</Project>

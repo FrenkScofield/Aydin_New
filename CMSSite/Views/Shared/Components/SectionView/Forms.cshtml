@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+    var content = ViewBag.content as ContentPage;
+}
+
+@if (content != null && content.FormTypeId != null)
+{
+    <div id="contentForm" class="pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    &nbsp;
+                </div>
+                <div class="col-md-8">
+
+
+                    @if (content.FormTypeId == 1)
+                    {
+                        <form class="reservation form-style-3">
+                            <h2 class="margin-bottom-80">Online reservation</h2>
+
+                            <!--Single Handler -->
+                            <div class="form-group">
+                                <label for="range">Number of people</label>
+                                <div class="range-slider-con">
+                                    <span class="start">1</span>
+                                    <div id="pmd-slider" class="pmd-range-slider "></div>
+                                    <span class="end">8</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email or phone number</label>
+                                <input type="email" class="form-control" id="email" />
+                                <span class="small-text">We will send you a confirmation of your reservation.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="f_name">Full name</label>
+                                <input type="text" class="form-control" id="f_name" />
+                            </div>
+
+                            <p>After completion of the reservation, you will receive a confeimation email or text message</p>
+
+                            <button class="main-btn">Book a seat</button>
+
+                            <p class="note">You can cancel your reservation by calling on +12 32 34 4332</p>
+                        </form>
+                    }
+                    else if (content.FormTypeId == 2)
+                    { <h4>You have a question for us?</h4>
+                        <p>leave your message below or email us at info@eyuboglu.com.tr</p>
+                        <form class="text-left form-style-2">
+                            <div class="form-group required">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" class="form-control" name="email"
+                                       placeholder="johnLP12@gmail.com" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <input type="text" id="message" class="form-control" name="name"
+                                       placeholder="Hello, I wanted to know about this particular course called..." />
+                                <span class="small-text">120 characters left</span>
+                            </div>
+                            <button class="main-btn" type="submit">Send message</button>
+                        </form>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display:none">
+        <div id="kvkk" class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Kullanım Koşulları</h3>
+                    <p>KİŞİSEL VERİLERİN İŞLENMESİ VE GÜVENLİĞİ FORMU Bu dokumanı onaylayarak 6698 Sayılı Kişisel Verilerin Korunması Kanunu’nun (“Kanun”) 5. Maddesi kapsamında Şirketimize iletmiş olduğunuz kişisel verilerinizin, hizmetlerimiz hakkında bilgi vermek ve sizlerle iletişime geçmek için kullanımına açıkça rıza göstermektesiniz.</p>
+                    <p>Kişisel verileriniz kanuni düzenlemelere uygun olarak ticari teamüllerde öngörülen sürelerde işlenecektir.</p>
+                    <p>Kanun kapsamında Veri Sorumlusu Şirketimiz; CUHADAROĞLU olup Kanun’daki tüm sorumluluk ve yükümlülüklerine uymayı kabul etmektedir. Kişisel Verilerinizin, Veri Sorumlusu Şirketimizin belirleyeceği yurtiçi veya yurtdışında bulunan 3. kişilere işbu verilerin saklanması, depolanması ve açık rıza gösterilen amaçlarla işlenmesi için aktarılmasına açıkça onay vermektesiniz. Kanuni haklarınız kapsamında; dilediğiniz zaman Veri Sorumlusu Şirketimize başvurarak tarafınıza ait kişisel verilerin işlenip işlenmediğini öğrenme, işlenen kişisel verileri varsa bunlara ilişkin bilgi talep etme, kişisel verilerin işlenme amacını ve bu verilerin amaca uygun kullanılıp kullanılmadığını öğrenme, kişisel verilerinin aktarıldığı üçüncü kişileri bilme, kişisel verilerindeki hataların düzeltilmesini ve eğer aktarım yapılmışsa ilgili üçüncü kişiden bu düzeltmenin istenmesini talep etme, kişisel verilerin işlenmesini gerektiren sebeplerin ortadan kalkması halinde bu verilerin silinmesini, yok edilmesini ya da anonim hale getirilmesini isteme ve eğer aktarım yapılmışsa bu talebin aktarılan üçüncü kişiye iletilmesini isteme, işlenen verilerin neticesinde kişi ile ilintili olumsuz bir sonuç çıkmasına itiraz etme, Kanun’a aykırı veri işleme nedeniyle zararının ortaya çıkması halinde zararını yasalar çerçevesinde talep etme hakkınız mevcuttur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $("#send_message").click(function (e) {
+        e.preventDefault();
+        $("#contact_form").submit();
+        return false;
+    })
+</script>
