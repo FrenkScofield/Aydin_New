@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "E:\\projeler\\bitbucketRepos\\AYDIN\\MailService\\MailService.csproj": {}
+    "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj": {}
   },
   "projects": {
-    "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\Helpers.csproj": {
+    "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\Helpers.csproj",
+        "projectUniqueName": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj",
         "projectName": "Helpers",
-        "projectPath": "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\Helpers.csproj",
-        "packagesPath": "C:\\Users\\Zon\\.nuget\\packages\\",
-        "outputPath": "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\obj\\",
+        "projectPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj",
+        "packagesPath": "C:\\Users\\FRENK\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Zon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\FRENK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -68,25 +71,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\projeler\\bitbucketRepos\\AYDIN\\MailService\\MailService.csproj": {
+    "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\projeler\\bitbucketRepos\\AYDIN\\MailService\\MailService.csproj",
+        "projectUniqueName": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj",
         "projectName": "MailService",
-        "projectPath": "E:\\projeler\\bitbucketRepos\\AYDIN\\MailService\\MailService.csproj",
-        "packagesPath": "C:\\Users\\Zon\\.nuget\\packages\\",
-        "outputPath": "E:\\projeler\\bitbucketRepos\\AYDIN\\MailService\\obj\\",
+        "projectPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj",
+        "packagesPath": "C:\\Users\\FRENK\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Zon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\FRENK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -100,8 +106,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\Helpers.csproj": {
-                "projectPath": "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\Helpers.csproj"
+              "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj": {
+                "projectPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj"
               }
             }
           }
@@ -136,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -398,7 +398,7 @@ namespace CMS.Controllers
         }
 
         [AcceptVerbs("Post")]
-        public ActionResult EditingInline_Destroy([DataSourceRequest] DataSourceRequest request, ContentPage postModel)
+        public ActionResult EditingInline_Destroy([ DataSourceRequest] DataSourceRequest request, ContentPage postModel)
         {
             if (postModel != null)
             {

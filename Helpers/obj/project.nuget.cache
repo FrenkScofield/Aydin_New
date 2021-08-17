@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "za/zpxBhuFC7BdjpkhSQ60mQO+YuSkqEZTZRIS3ZuJZSimAufOs7MnSuo1F80Zn0On5fu9iAlK9NJV2ZKcODxw==",
+  "dgSpecHash": "5TnPYP/qoyFCx0u+mbbcglJV3+XppdGzn3VFKe0pxU7nlU7GIytD+BfiXCtfcHHwCfRN9cOdacyh8q3IxZ/d1Q==",
   "success": true,
-  "projectFilePath": "E:\\projeler\\bitbucketRepos\\AYDIN\\Helpers\\Helpers.csproj",
+  "projectFilePath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Zon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Zon\\.nuget\\packages\\system.linq.dynamic.core\\1.0.19\\system.linq.dynamic.core.1.0.19.nupkg.sha512"
+    "C:\\Users\\FRENK\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\FRENK\\.nuget\\packages\\system.linq.dynamic.core\\1.0.19\\system.linq.dynamic.core.1.0.19.nupkg.sha512"
   ],
   "logs": []
 }

@@ -170,9 +170,9 @@ namespace CMSSite.Controllers
 
             return contentPages;
         }
-
+     
         [HttpPost]
-        public JsonResult FormSave(string email, string name,string phone, string message,string subject,string check)
+        public JsonResult FormSave(string email, string name,string phone, string message,string subject,string check,string check2, string comment)
         {
             if (!string.IsNullOrEmpty(check) && check == "1" && !string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(phone) && !string.IsNullOrEmpty(email))
             {
@@ -185,8 +185,7 @@ namespace CMSSite.Controllers
                 myForm.Subject = subject;
                 myForm.FormTypeId = 1;
                 myForm.CreaUser = 1;
-                var result = _IFormsService.InsertOrUpdate(myForm);
-                
+                //var result = _IFormsService.InsertOrUpdate(myForm); 
 
                 var config = _ISiteConfigService.Where(null, true, false, null).Result.FirstOrDefault();
 
@@ -194,9 +193,9 @@ namespace CMSSite.Controllers
                 config.SmtpMail = config.SmtpMail;
                 config.SmtpMailPass = config.SmtpMailPass;
                 config.SmtpHost = config.SmtpHost;
-                config.SmtpPort = "587";
+                config.SmtpPort = config.SmtpPort;
                 config.MailGorunenAd = config.MailGorunenAd;
-                config.SmtpSSL = false;
+                config.SmtpSSL = true;
 
                 string[] ccListStr = null;
                 //  if (string.IsNullOrEmpty(result.ResultRow.FormType.MailCC))

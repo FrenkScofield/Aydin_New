@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base href="https://codyhouse.co/">
+<title>CSS Animated Headlines | CodyHouse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" itemprop="description" content="A collection of animated headlines, with interchangeable words that replace one another through CSS transitions.">
+<meta name="keywords" itemprop="keywords" content="css, html, javascript, animation, headline, heading">
+<link rel="canonical" href="https://codyhouse.co/gem/css-animated-headlines/">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#888888">
+
+
+<meta property="og:url" content="https://codyhouse.co/gem/css-animated-headlines/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CSS Animated Headlines | CodyHouse" />
+<meta property="og:description" content="A collection of animated headlines, with interchangeable words that replace one another through CSS transitions." />
+<meta property="og:image" content="https://codyhouse.co/assets/img/gems/hero-sharing/animated-headlines-featured.png" />
+<meta property="og:site_name" content="CodyHouse" />
+
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+
+
+
+<link id="codyframe" rel="stylesheet" href="assets/css/style.css?v=103"> 
+<script>
+    if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
+  </script>
+
+</head>
+<body class="user--not-logged-in" data-theme="default">
+<div class="position-relative">
+<div class="pre-header">
+
+<a href="sign-up?become-pro">
+<div class="container max-width-lg flex justify-center">
+<div class="pre-header__msg text-sm flex flex-center">
+<p>🎉 <strong>Black Friday deal!</strong> 30% off your first year of CodyHouse Pro &rarr;</p>
+</div>
+</div>
+</a>
+</div> <header class="main-header js-main-header main-header--position-absolute" data-theme="dark">
+<div class="main-header__container container max-width-xl">
+<div class="flex items-center">
+<a href="/" class="logo" aria-label="Go to homepage">
+<svg aria-hidden="true" viewBox="0 0 40 40"><title>CodyHouse Logo</title><path d="M40,22V18H33.652a17.844,17.844,0,0,0-.38-2.4A16.906,16.906,0,0,0,37,5H33a12.906,12.906,0,0,1-1.565,6.177,11.462,11.462,0,0,0-4.83-4.195,6.869,6.869,0,0,0-13.21,0,11.471,11.471,0,0,0-4.831,4.195A12.917,12.917,0,0,1,7,5H3A16.906,16.906,0,0,0,6.728,15.6a17.844,17.844,0,0,0-.38,2.4H0v4H6.408a18.253,18.253,0,0,0,.466,2.209A16.923,16.923,0,0,0,3,35H7a12.914,12.914,0,0,1,1.641-6.306C11.243,33.741,15.62,38,20,38s8.757-4.259,11.359-9.306A12.914,12.914,0,0,1,33,35h4a16.923,16.923,0,0,0-3.874-10.791A18.253,18.253,0,0,0,33.592,22ZM11,17a3,3,0,1,1,3,3A3,3,0,0,1,11,17Zm9,13a4,4,0,1,1,4-4A4,4,0,0,1,20,30Zm6-10a3,3,0,1,1,3-3A3,3,0,0,1,26,20Z" /></svg>
+</a>
+</div>
+<div class="main-nav js-main-nav">
+<button class="main-nav__trigger js-trigger margin-left-sm"><i>Menu</i><em aria-hidden="true">Close</em></button>
+<nav class="main-nav__list js-nav">
+<ul>
+<li class="main-nav__label">#menu</li>
+<li><a href="ds/components">UI Framework</a></li>
+<li><a href="templates">Templates</a></li>
+<li><a href="library" class="">Experiments</a></li>
+<li class="main-nav__label">#account</li>
+<li aria-hidden="true" class="main-nav__separator"></li>
+<li data-display="notLoggedIn">
+<a href="log-in">
+<span class="inline-flex items-center">
+<span>Login</span>
+<svg aria-hidden="true" class="icon margin-left-xxs" viewBox="0 0 16 16"><g><circle cx="8" cy="5" r="3"></circle><path d="M8 9a5 5 0 0 0-5 5h10a5 5 0 0 0-5-5z"></path></g></svg>
+</span>
+</a>
+</li>
+<li data-display="loggedIn">
+<a class="main-nav__account-btn js-main-nav__account" href="account/account-settings">
+<span class="inline-flex items-center">
+<span>Account</span>
+<svg aria-hidden="true" class="icon margin-left-xxs" viewBox="0 0 16 16"><polygon points="3,5 8,11 13,5 "></polygon></svg>
+</span>
+</a>
+<ul class="main-nav__menu js-main-nav__menu">
+<li><a href="account/account-settings">Account settings</a></li>
+<li><a href="ds/all-projects">Projects</a></li>
+<li><a href="log-out">Logout</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+</div><main class="js-highlight">
+<div class="gem-intro" style="background-color: #0096a7">
+<figure class="gem-intro__img">
+<div class="gem-intro__img-wrapper">
+<img src="https://codyhouse.co/assets/img/gems/hero/animated-headlines-featured.svg" alt="Animated Headlines">
+</div>
+</figure>
+</div> <div class="margin-top-md margin-bottom-xl">
+<article class="article article--gem">
+<div class="text-component container max-width-sm">
+<h1>Animated Headlines</h1>
+<p class="article-description">A collection of animated headlines, with interchangeable words that replace one another through CSS transitions.</p>
+</div>
+<div class="gem-divider">
+<div class="gem-divider__cta margin-bottom-lg container max-width-sm">
+<span aria-hidden="true" class="gem-divider__hr"></span>
+<a class="btn btn--lg btn--accent" href="https://codyhouse.co/demo/animated-headlines/index.html">View demo</a>
+<a class="btn btn--lg btn--contrast js-download-experiment" href="https://codyhouse.co/redirect-experiment" data-experiment="animated-headline">
+<span>Download</span>
+</a>
+<span aria-hidden="true" class="gem-divider__hr"></span>
+</div>
+
+
+
+<div class="container max-width-adaptive-sm margin-bottom-lg">
+<a href="https://codyhouse.co/ds/components" class="tutorial-avd text-md padding-sm">
+⚡️ <span class="text-underline">Design 10x faster with our library of 345 components &rarr;</span>
+</a>
+</div>
+</div> 
+<div class="text-component container max-width-sm">
+<p>I recently stumbled upon the <a href="https://www.spotify-yearinmusic.com/us/">Year in Music 2014</a> website. Among some fancy effects, the animated headline captured my attention. So I decided to put together a collection of <strong>CSS effects</strong> for headlines with rotating words!</p>
+<p class="info-msg text-center padding-sm">👋 A new version of this component is available. <a href="ds/components/app/animated-headline">Download now &rarr;</a>.</p>
+<h2>Creating the structure</h2>
+<p>The <strong>HTML structure</strong> is the same for every&nbsp;animation. We used a <code>&lt;section&gt;</code> element as container, just to give some margins and set a max-width. The headline is an <code>&lt;h1&gt;</code> tag - block element. Each word is wrapped into a <code>&lt;b&gt;</code> tag, all words inside the same <code>&lt;span&gt;</code> element - inline element.</p>
+<p>The class <code>.rotate-1</code> (added to the <code>&lt;h1&gt;</code> tag) is what determines the effect to apply. If you just want to use this nugget,&nbsp;<span style="text-decoration: underline;">this is how it works</span>: you change the class, you change the effect. Piece of cake!</p>
+<p>Some effects may require an additional class. For example: when each letter is animated separately, the class <code>.letters</code> must be added to the <code>&lt;h1&gt;</code> tag. Inside the index.html file you can check the names of the&nbsp;classes applied to every&nbsp;headline.</p>
+<pre><code class="html hljs js-hljs">&lt;section class="cd-intro"&gt;
+   &lt;h1 class="cd-headline rotate-1"&gt;
+      &lt;span&gt;My favourite food is&lt;/span&gt;
+      &lt;span class="cd-words-wrapper"&gt;
+         &lt;b class="is-visible"&gt;pizza&lt;/b&gt;
+         &lt;b&gt;sushi&lt;/b&gt;
+         &lt;b&gt;steak&lt;/b&gt;
+      &lt;/span&gt;
+   &lt;/h1&gt;
+&lt;/section&gt; &lt;!-- cd-intro --&gt;</code></pre>
+<h2>Adding style</h2>
+<p>Let's see together how to create the Rotate 1 effect. The process is similar for every animation, feel free to surf through the source files (or, why not, try to create the animation all by yourself!).</p>
+<p>First thing first: let's apply the <code>.rotate-1</code> class to the <code>&lt;h1&gt;</code> tag!</p>
+<p>The idea is to create a 3D rotation: the visible word should disappear by rotating over the X axis, the new word should appear from the bottom and take the free spot, always rotating over the X&nbsp;axis.</p>
+<p><img class="alignnone size-full wp-image-492" src="assets/img/gems/gifs/css-animated-headline-effect-preview.gif" alt="effect preview" /></p>
+<p>To work in a 3D space, we need to set a perspective value, otherwise animated elements will look flat. Remember: the Perspective property shouldn't be applied to the element that will be animated (through a <strong>CSS Transition</strong>, <strong>Transformation</strong> or <strong>Animation</strong>), but to a parent element. In this case I applied the perspective property to <code>.cd-words-wrapper</code>:</p>
+<pre><code class="scss hljs js-hljs">.cd-headline.rotate-1 .cd-words-wrapper {
+  display: inline-block;
+  perspective: 300px;
+}</code></pre>
+<p>With the Perspective property in place, we target the <code>&lt;b&gt;</code> elements (each word) and we set <code>opacity: 0;</code> and <code>position: absolute;</code>. This way we hide all the words and we remove them from the flow of the document, as if they don't occupy a space anymore. Finally we use the <code>.is-visible</code> class applied to the first <code>&lt;b&gt;</code> element (first word) and we add <code>opacity: 1;</code> and <code>position: relative;</code>. This is how we make the first word visible.</p>
+<p>Note that we are applying a transformation (<code>rotateX(180deg)</code>) to each word to turn it over. <code>transform-origin</code> value is set at the bottom (first value is X, second value is Y). It's an important detail: as you can see from the .gif above or the demo, the origin of the rotation is not the center and we need to specify it in CSS. Then of course the rotation is set back to 0 if the <code>.is-visible</code> class is applied.</p>
+<pre><code class="scss hljs js-hljs">.cd-headline.rotate-1 b {
+  opacity: 0;
+  transform-origin: 50% 100%;
+  transform: rotateX(180deg);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cd-headline.rotate-1 b.is-visible {
+  position: relative;
+  opacity: 1;
+  transform: rotateX(0deg);
+}</code></pre>
+<p>We need to trigger the animation: with the help of jQuery, we remove the class <code>.is-visible</code> from the first element and add it to the second, then we remove it from the second and add it to the third etc -&nbsp;to create a loop.&nbsp;Every time we remove the <code>.is-visible</code> class, we switch it with the <code>.is-hidden</code> one. Why we need 2 classes: in each class we define a different CSS animation. The <code>.is-visible</code> is to show a word, the <code>.is-hidden</code> to hide it, of course. See how the CSS changes with the addition of the animations:</p>
+<pre><code class="scss hljs js-hljs">.cd-headline.rotate-1 b {
+  opacity: 0;
+  transform-origin: 50% 100%;
+  transform: rotateX(180deg);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cd-headline.rotate-1 b.is-visible {
+  position: relative;
+  opacity: 1;
+  transform: rotateX(0deg);
+  animation: cd-rotate-1-in 1.2s;
+}
+
+.cd-headline.rotate-1 b.is-hidden {
+  transform: rotateX(180deg);
+  animation: cd-rotate-1-out 1.2s;
+}</code></pre>
+<p>All what remains to do is defining the keyframes for both&nbsp;animations. The reason why we chose Animations over Transitions is the extra power in defining intermediate events. This is how we create the "anticipation" effect. Working with keyframes is clearly working with motion concepts. You can step up your interactions by distributing them along a timeline.</p>
+<pre><code class="scss hljs js-hljs">@keyframes cd-rotate-1-in {
+  0% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35% {
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cd-rotate-1-out {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  35% {
+    transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+}</code></pre>
+<h2>Events handling</h2>
+<p>To trigger the headline animation, we defined the&nbsp;<code>animateHeadline()</code> function.</p>
+<pre><code class="javascript hljs js-hljs">var animationDelay = 2500;
+
+animateHeadline($('.cd-headline'));
+
+function animateHeadline($headlines) {
+   $headlines.each(function(){
+      var headline = $(this);
+      //trigger animation
+      setTimeout(function(){ hideWord( headline.find('.is-visible') ) }, animationDelay);
+      //other checks here ...
+   });
+}</code></pre>
+<p>This is used to trigger the <code>hideWord()</code> function with a delay of 2.5s. This function removes the <code>.is-visible</code> class from the first word and adds it to the second while removing the <code>.is-hidden</code> class from the second and adding it to the first. The <code>hideWord()</code> is then triggered again (with&nbsp;the same delay) in order to create the loop.</p>
+<pre><code class="javascript hljs js-hljs">function hideWord($word) {
+   var nextWord = takeNext($word);
+   switchWord($word, nextWord);
+   setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+}
+
+function takeNext($word) {
+   return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+}
+
+function switchWord($oldWord, $newWord) {
+   $oldWord.removeClass('is-visible').addClass('is-hidden');
+   $newWord.removeClass('is-hidden').addClass('is-visible');
+}</code></pre>
+<p><span style="text-decoration: underline;">One note</span>: there are some effects&nbsp;which require to animate single letters separately&nbsp;(for example, the Type&nbsp;effect). For these animations, we added the <code>.letters</code> class to the <code>&lt;h1&gt;</code>&nbsp;and wrapped each letter&nbsp;inside an <code>&lt;i&gt;</code> element using&nbsp;the <code>singleLetters()</code> function.</p>
+<pre><code class="javascript hljs js-hljs">singleLetters($('.cd-headline.letters').find('b'));
+
+function singleLetters($words) {
+   $words.each(function(){
+      var word = $(this),
+          letters = word.text().split(''),
+          selected = word.hasClass('is-visible');
+      for (i in letters) {
+         letters[i] = (selected) ? '&lt;i class="in"&gt;' + letters[i] + '&lt;/i&gt;': '&lt;i&gt;' + letters[i] + '&lt;/i&gt;';
+      }
+      var newLetters = letters.join('');
+      word.html(newLetters);
+   });
+}</code></pre> </div>
+</article>
+</div>
+<div class="cta-blocks-socials margin-bottom-xl">
+<div class="cta-blocks-socials__container container max-width-sm">
+<div class="cta-blocks-socials__twitter js-animate-hover" data-duration="600">
+<a href="https://twitter.com/CodyWebHouse" aria-label="Follow us on Twitter">
+<em aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<g id="i-twitter-body"><path d="M42.3,10.7a9.65,9.65,0,0,0,4.3-5.4,21.673,21.673,0,0,1-6.3,2.4,9.968,9.968,0,0,0-7.2-3.1,9.816,9.816,0,0,0-9.8,9.8,7.8,7.8,0,0,0,.3,2.2c-1.819,7.994-4.475,13.556-9.1,18.3A20.007,20.007,0,0,1,2.3,39.1,16.95,16.95,0,0,1,0,39a27.827,27.827,0,0,0,15.1,4.4c18.1,0,28-15,28-28V14.1a17.958,17.958,0,0,0,4.9-5A21.919,21.919,0,0,1,42.3,10.7Z" fill="#fff" /></g>
+<g id="i-twitter-wing"><path d="M23.6,16.6A28.018,28.018,0,0,1,3.3,6.3,10.234,10.234,0,0,0,2,11.2a9.793,9.793,0,0,0,4.4,8.2,11.571,11.571,0,0,1-4.5-1.2v.1A9.88,9.88,0,0,0,9.8,28a10.9,10.9,0,0,1-2.6.3,12.252,12.252,0,0,1-1.9-.2,9.79,9.79,0,0,0,9.2,6.8A28.008,28.008,0,0,0,23.6,16.6Z" fill="#fff" /></g>
+</svg>
+<p>Follow us</p>
+</em>
+</a>
+</div>
+<div class="cta-blocks-socials__facebook js-animate-hover" data-duration="400">
+<a href="https://www.facebook.com/CodyWebHouse" aria-label="Join us on Facebook">
+<em aria-hidden="true">
+<svg class="cta-animation-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" width="48" height="48">
+<g>
+<path d="M46,0H2A2,2,0,0,0,0,2V46a2,2,0,0,0,2,2H46a2,2,0,0,0,2-2V2A2,2,0,0,0,46,0Z" fill="#fff" />
+<path class="cta-animation-facebook__f cta-animation-facebook__f--1" d="M25.638,48V29.412H19.383V22.168h6.255V16.825c0-6.2,3.787-9.575,9.318-9.575a51.383,51.383,0,0,1,5.589.285v6.479l-3.836,0c-3.007,0-3.59,1.429-3.59,3.527v4.625h7.174l-.934,7.244h-6.24V48Z" fill="#415893" />
+<path class="cta-animation-facebook__f cta-animation-facebook__f--2" d="M25.638,48V29.412H19.383V22.168h6.255V16.825c0-6.2,3.787-9.575,9.318-9.575a51.383,51.383,0,0,1,5.589.285v6.479l-3.836,0c-3.007,0-3.59,1.429-3.59,3.527v4.625h7.174l-.934,7.244h-6.24V48Z" fill="#415893" />
+</g>
+</svg>
+<p>Join us</p>
+</em>
+</a>
+</div>
+<div class="cta-blocks-socials__main js-animate-hover" data-duration="400">
+<a href="ds/components" aria-label="Browse our web components">
+<div>
+<h3>📦 UI Framework</h3>
+<p>Browse our library of customizable <span>web components</span></p>
+<i aria-hidden="true">
+<b class="cta-animation-components">
+<b class="cta-animation-components__rect cta-animation-components__rect--1"></b>
+<b class="cta-animation-components__rect cta-animation-components__rect--2"></b>
+<b class="cta-animation-components__rect cta-animation-components__rect--3"></b>
+</b>
+</i>
+</div>
+</a>
+</div>
+</div>
+</div> <div class="newsletter text-center js-newsletter margin-bottom-xl">
+<div class="container">
+<div class="text-component margin-bottom-md">
+
+
+<h1>Level up your CSS skills</h1>
+
+<p>💌 Each month we email a 1-minute CSS tutorial to 20K developers</p>
+</div>
+<form class="newsletter__form max-width-xxs margin-x-auto js-newsletter-form">
+<input type="email" placeholder="Email" name="email" class="form-control width-100% js-email">
+<button class="btn btn--subtle btn--preserve-width newsletter__btn js-btn">
+<span class="btn__content-a">Try it</span>
+<span class="btn__content-b" aria-hidden="true">
+<svg class="icon icon--md icon--is-spinning" viewBox="0 0 32 32"><path d="M16,32A16,16,0,1,1,32,16,16.019,16.019,0,0,1,16,32ZM16,4A12,12,0,1,0,28,16,12.013,12.013,0,0,0,16,4Z" fill="currentColor" opacity="0.4"></path><path d="M32,16H28A12.013,12.013,0,0,0,16,4V0A16.019,16.019,0,0,1,32,16Z" fill="currentColor"></path></g></svg>
+</span>
+<span class="btn__content-c">
+<svg class="icon icon--md" viewBox="0 0 32 32"><polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" points="2,15 12,25 30,7 " stroke-linejoin="round"></polyline></svg>
+</span>
+</button>
+</form>
+<p class="newsletter__response newsletter__response--is-hidden js-response-message"></p>
+</div>
+</div></main>
+<div class="notification js-privacy-policy-alert js-notification" role="alert">
+<div class="notification__content">
+<div class="text-component">
+<p>📢 We use cookies to give you the best possible website experience. By using CodyHouse, you agree to our <a class="color-inherit" href="privacy-policy">Privacy Policy</a>.</p>
+</div>
+<button class="notification__btn js-notification__close">
+<svg class="icon" viewBox="0 0 16 16"><g><title>Close Notification</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 2l12 12"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2L2 14"></path></g></svg>
+</button>
+</div>
+</div>
+<div class="flash-message js-flash-message js-flash-message--duplicate-prj" role="status" data-message-trigger="" data-duration="3000">
+<p>✅ Project duplicated</p>
+</div><div class="flash-message js-flash-message js-flash-message--create-prj" role="status" data-message-trigger="" data-duration="3000">
+<p>✅ Project created</p>
+</div>
+<footer class="main-footer ">
+<div class="container max-width-xl">
+<div class="main-footer__content">
+<div class="footer-nav">
+<nav>
+<h4 class="footer-nav__title">UI Framework</h4>
+<ul>
+<li><a href="ds/get-started">Documentation</a></li>
+<li><a href="ds/docs/framework">Framework</a></li>
+<li><a href="ds/components">Components</a></li>
+<li><a href="ds/globals">Globals</a></li>
+<li><a href="codyhouse-pro">CodyHouse Pro</a></li>
+<li><a href="https://codyhouse.nolt.io/">Suggest Component ↗</a></li>
+</ul>
+</nav>
+<nav>
+<h4 class="footer-nav__title">Learn</h4>
+<ul>
+<li><a href="library">Experiments</a></li>
+<li><a href="tutorials">Tutorials</a></li>
+<li><a href="nuggets">CSS Nuggets</a></li>
+</ul>
+</nav>
+<nav>
+ <h4 class="footer-nav__title">Support</h4>
+<ul>
+<li><a href="faq">Questions &amp; Answers</a></li>
+<li><a href="contact">Contact</a></li>
+<li><a href="license">License</a></li>
+<li><a href="terms">Terms</a></li>
+<li><a href="privacy-policy">Privacy policy</a></li>
+</ul>
+</nav>
+<nav>
+<h4 class="footer-nav__title">Socials</h4>
+<ul>
+<li>
+<a href="blog" class="icon-text footer-nav__item-social">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><g><path d="M14,0H2C1.4,0,1,0.4,1,1v14c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V1C15,0.4,14.6,0,14,0z M13,14H3V2h10V14z"></path> <rect data-color="color-2" x="4" y="3" width="4" height="4"></rect> <rect data-color="color-2" x="9" y="4" width="3" height="1"></rect> <rect data-color="color-2" x="9" y="6" width="3" height="1"></rect> <rect data-color="color-2" x="4" y="8" width="8" height="1"></rect> <rect data-color="color-2" x="4" y="10" width="8" height="1"></rect> <rect data-color="color-2" x="4" y="12" width="5" height="1"></rect></g></svg>
+<span>Blog</span>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/CodyWebHouse" class="icon-text footer-nav__item-social twitter">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo twitter</title><g><path d="M16,3c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1 C9.3,1.5,7.8,3,7.8,4.8c0,0.3,0,0.5,0.1,0.7C5.2,5.4,2.7,4.1,1.1,2.1c-0.3,0.5-0.4,1-0.4,1.7c0,1.1,0.6,2.1,1.5,2.7 c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2C3,9.4,2.7,9.4,2.4,9.4c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3 c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0c1.5,0.9,3.2,1.5,5,1.5c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4C15,4.3,15.6,3.7,16,3z"></path></g></svg>
+<span>Twitter</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/codyhouse.css/" class="icon-text footer-nav__item-social instagram">
+<svg class="icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><g><circle cx="12.145" cy="3.892" r="0.96"></circle><path data-color="color-2" d="M8,12c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S10.206,12,8,12z M8,6C6.897,6,6,6.897,6,8 s0.897,2,2,2s2-0.897,2-2S9.103,6,8,6z"></path><path d="M12,16H4c-2.056,0-4-1.944-4-4V4c0-2.056,1.944-4,4-4h8c2.056,0,4,1.944,4,4v8C16,14.056,14.056,16,12,16z M4,2C3.065,2,2,3.065,2,4v8c0,0.953,1.047,2,2,2h8c0.935,0,2-1.065,2-2V4c0-0.935-1.065-2-2-2H4z"></path></g></svg>
+<span>Instagram</span>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/CodyWebHouse" class="icon-text footer-nav__item-social facebook">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo facebook</title><g><path d="M15.3,0H0.7C0.3,0,0,0.3,0,0.7v14.7C0,15.7,0.3,16,0.7,16H8v-5H6V8h2V6c0-2.1,1.2-3,3-3 c0.9,0,1.8,0,2,0v3h-1c-0.6,0-1,0.4-1,1v1h2.6L13,11h-2v5h4.3c0.4,0,0.7-0.3,0.7-0.7V0.7C16,0.3,15.7,0,15.3,0z"></path></g></svg>
+<span>Facebook</span>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCQhxjJcgCwDW_2JqlDBsWtA" class="icon-text footer-nav__item-social youtube">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo youtube</title><g><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path></g></svg>
+<span>Youtube</span>
+</a>
+</li>
+
+<li>
+<a href="newsletter" class="icon-text footer-nav__item-social">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>email</title><g><path data-color="color-2" d="M14,6.883V13H2V6.82L0,5.695V14c0,0.553,0.448,1,1,1h14c0.552,0,1-0.447,1-1V5.783L14,6.883z"></path> <path d="M15,1H1C0.4,1,0,1.4,0,2v1.4l8,4.5l8-4.4V2C16,1.4,15.6,1,15,1z"></path> </g></svg>
+<span>Newsletter</span>
+</a>
+</li>
+<li>
+<a href="http://feeds.feedburner.com/codyhouse/feeds" class="icon-text footer-nav__item-social">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo-rss</title><g><circle cx="3" cy="13" r="2"></circle> <path d="M15,15h-2.7C12.3,8.8,7.2,3.7,1,3.7V1C8.7,1,15,7.3,15,15z"></path> <path d="M10.3,15H7.7c0-3.7-3-6.7-6.7-6.7V5.7C6.1,5.7,10.3,9.9,10.3,15z"></path></g></svg>
+<span>RSS</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="footer-avd">
+<div class="footer-avd__label">Sponsored by</div>
+<div class="footer-avd__wrapper">
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIK2QE&placement=codyhouseco" id="_carbonads_js"></script>
+</div>
+</div> </div>
+<div class="padding-y-lg">
+<div class="text-sm flex flex-column flex-gap-md flex-row@md justify-between@md items-center@md">
+<p>©2014 - 2021 CodyHouse. A project by <a href="https://twitter.com/romano_cla" class="color-inherit">@romano_cla</a> and <a href="https://twitter.com/guerriero_se" class="color-inherit">@guerriero_se</a></p>
+<p class="flex">
+<button href="#0" class="reset main-footer__btn margin-right-xxs js-back-to-top">
+<svg aria-hidden="true" class="icon icon--xxs margin-right-xxs" viewBox="0 0 12 12"><g><path d="M6,0a6,6,0,1,0,6,6A6,6,0,0,0,6,0ZM3,7,6,3,9,7Z"></path></g></svg>
+<span>Back to top</span>
+</button>
+<button href="#0" class="reset main-footer__btn btn-states js-app-dark-mode">
+<svg aria-hidden="true" class="icon icon--xxs margin-right-xxs" viewBox="0 0 16 16"><g><path d="M6,0C2.5,0.9,0,4.1,0,7.9C0,12.4,3.6,16,8.1,16c3.8,0,6.9-2.5,7.9-6C9.9,11.7,4.3,6.1,6,0z"></path></g></svg>
+<span class="btn-states">
+<b class="btn__content-a">Enable</b><b class="btn__content-b">Disable</b> Dark Mode
+</span>
+</button>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal js-modal " data-modal-trigger="modalProRequired">
+<div class="modal__content max-width-xs js-modal-content" role="alertdialog" tabindex="-1" aria-labelledby="modalTitlePro1" aria-describedby="modalDescriptionPro1">
+<header class="modal__header">
+<h3 class="modal__title text-truncate" id="modalTitlePro1">Upgrade to CodyHouse Pro</h3>
+<button class="modal__header-close-btn js-modal__close">
+<svg class="icon" viewBox="0 0 16 16"><title>Close modal window</title><g stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line></g></svg>
+</button>
+</header>
+<div class="modal__body">
+<div>
+<ul class="grid gap-xs">
+<li class="flex items-center">
+<svg class="icon icon--sm margin-right-xxxs" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#6ad354" opacity="0.2" /><polyline points="6 12 10 16 19 7" fill="none" stroke="#57d339" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" /></svg>
+<span>Unlimited CodyHouse projects</span>
+</li>
+<li class="flex items-center">
+<svg class="icon icon--sm margin-right-xxxs" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#6ad354" opacity="0.2" /><polyline points="6 12 10 16 19 7" fill="none" stroke="#57d339" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" /></svg>
+<span>Unlock 156 pro components and counting</span>
+</li>
+<li class="flex items-center">
+<svg class="icon icon--sm margin-right-xxxs" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#6ad354" opacity="0.2" /><polyline points="6 12 10 16 19 7" fill="none" stroke="#57d339" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" /></svg>
+<span>Unlock our collection of Templates</span>
+</li>
+<li class="flex items-center">
+<svg class="icon icon--sm margin-right-xxxs" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#6ad354" opacity="0.2" /><polyline points="6 12 10 16 19 7" fill="none" stroke="#57d339" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" /></svg>
+<span>One-click project export</span>
+</li>
+</ul>
+</div>
+<footer class="margin-top-md">
+<div class="flex flex-column flex-gap-sm flex-row@sm items-center@sm justify-end@sm">
+<a href="log-in" class="color-inherit margin-right-auto" data-display="notLoggedIn">Log in</a>
+<a href="codyhouse-pro" class="btn btn--subtle">Learn more</a>
+<a href="sign-up?become-pro" class="btn btn--primary">Go Pro - $89/year</a>
+</div>
+</footer>
+</div>
+</div>
+<button class="modal__close-btn js-modal__close">
+<svg class="icon" viewBox="0 0 16 16"><title>Close modal window</title><g stroke-width="1" stroke="currentColor" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5" data-cap="butt"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5" data-cap="butt"></line></g></svg>
+</button>
+</div><div class="flash-message js-flash-message flash-message--error js-flash-message--project-export" role="status" data-message-trigger="" data-duration="3000">
+<p>There was an error while trying to export your project. Please try again or <a href="contact">contact us</a></p>
+</div>
+<script>
+  var COMP_NUM = 345;
+</script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+  var ROUTE    = 'gem_css-animated-headlines';
+  var AJAX_URL = 'post/';
+  const IS_LOGGED = '0';
+  const IS_FREE = '1';
+  var PROJECT = null;
+  const STRIPE_PB = 'pk_live_1JJgxoXnJdjpNbgxEEXlCqKb00HEdWbq1K';
+  var COMPNUM = '345';
+</script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="assets/js/min/main.min.js?v=124"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48014931-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script src="assets/js/min/app-main.min.js?v=112"></script> 
+</body>
+</html>
