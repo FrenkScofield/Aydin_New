@@ -18,7 +18,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.2" />
     <PackageReference Include="Telerik.UI.for.AspNet.Core.Trial" Version="2021.2.616" />
   </ItemGroup>
-
+ 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DefineConstants>TRACE;DEBUG;RELEASE</DefineConstants>
   </PropertyGroup>
