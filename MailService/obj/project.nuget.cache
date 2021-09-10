@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0gzHMEK3oVdijl9NQGpLV4L9XfoxZjzoNDh4YaclnzWCHrPaXOcECFl8umYFsn9/SBpXn1mD2urRdeFstXS7Ug==",
+  "dgSpecHash": "W3gqGKzqEO/+P0/mO3x5Cwsu0nkl0BZ52iYuSjxHDWqnrUJ50Dwuh0ZThNRnWsA0/LiLxiC1FuAmIqRMrbBLCA==",
   "success": true,
-  "projectFilePath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj",
+  "projectFilePath": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\MailService\\MailService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\FRENK\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\FRENK\\.nuget\\packages\\system.linq.dynamic.core\\1.0.19\\system.linq.dynamic.core.1.0.19.nupkg.sha512"
+    "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.linq.dynamic.core\\1.0.19\\system.linq.dynamic.core.1.0.19.nupkg.sha512"
   ],
   "logs": []
 }

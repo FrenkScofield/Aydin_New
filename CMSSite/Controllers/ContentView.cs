@@ -67,8 +67,8 @@ namespace CMSSite.Components
 
             ViewBag.content = content;
 
-            ViewBag.MetaTitle = content.Name+ " | Turgut Aydın Holding";
-            ViewBag.MetaDescription = string.IsNullOrEmpty(content.ContentShort)? "Turgut Aydın Holding": content.ContentShort;
+            ViewBag.MetaTitle = content.Name+ " | Aydın Grup";
+            ViewBag.MetaDescription = string.IsNullOrEmpty(content.ContentShort)? "Aydın Grup" : content.ContentShort;
             return View(TemplateType.ToString());
         }
     }

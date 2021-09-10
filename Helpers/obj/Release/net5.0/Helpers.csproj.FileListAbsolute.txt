@@ -58,3 +58,15 @@ D:\Users\FRENK\source\repos\Hibrit\AYDIN\Helpers\obj\Release\net5.0\Helpers.cspr
 D:\Users\FRENK\source\repos\Hibrit\AYDIN\Helpers\obj\Release\net5.0\Helpers.dll
 D:\Users\FRENK\source\repos\Hibrit\AYDIN\Helpers\obj\Release\net5.0\ref\Helpers.dll
 D:\Users\FRENK\source\repos\Hibrit\AYDIN\Helpers\obj\Release\net5.0\Helpers.pdb
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\bin\Release\net5.0\Helpers.deps.json
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\bin\Release\net5.0\Helpers.dll
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\bin\Release\net5.0\ref\Helpers.dll
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\bin\Release\net5.0\Helpers.pdb
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.AssemblyInfoInputs.cache
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.AssemblyInfo.cs
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.csproj.CoreCompileInputs.cache
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.dll
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\ref\Helpers.dll
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.pdb
+D:\Users\DELL\Source\Repos\Aydin_New\Helpers\obj\Release\net5.0\Helpers.csproj.AssemblyReference.cache

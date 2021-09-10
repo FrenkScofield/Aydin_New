@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj": {}
+    "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\MailService\\MailService.csproj": {}
   },
   "projects": {
-    "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj": {
+    "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\Helpers\\Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj",
+        "projectUniqueName": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\Helpers\\Helpers.csproj",
         "projectName": "Helpers",
-        "projectPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj",
-        "packagesPath": "C:\\Users\\FRENK\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\obj\\",
+        "projectPath": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\Helpers\\Helpers.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\Helpers\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\FRENK\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -71,28 +65,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj": {
+    "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\MailService\\MailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj",
+        "projectUniqueName": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\MailService\\MailService.csproj",
         "projectName": "MailService",
-        "projectPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\MailService.csproj",
-        "packagesPath": "C:\\Users\\FRENK\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\MailService\\obj\\",
+        "projectPath": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\MailService\\MailService.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\MailService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\FRENK\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -106,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj": {
-                "projectPath": "D:\\Users\\FRENK\\source\\repos\\Hibrit\\AYDIN\\Helpers\\Helpers.csproj"
+              "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\Helpers\\Helpers.csproj": {
+                "projectPath": "D:\\Users\\DELL\\Source\\Repos\\Aydin_New\\Helpers\\Helpers.csproj"
               }
             }
           }
@@ -142,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,10 +3,12 @@
     "",
     "\\CMSSite",
     "\\CMSSite\\Views",
+    "\\CMSSite\\Views\\Base",
     "\\CMSSite\\Views\\Shared",
-    "\\CMSSite\\Views\\Shared\\Components",
-    "\\CMSSite\\Views\\Shared\\Components\\ContentView"
+    "\\DynamicSiteService",
+    "\\DynamicSiteService\\Entity",
+    "\\DynamicSiteService\\Entity\\Enums"
   ],
-  "SelectedNode": "\\CMSSite\\Views\\Shared\\Components\\ContentView\\Contact.cshtml",
+  "SelectedNode": "\\CMSSite\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

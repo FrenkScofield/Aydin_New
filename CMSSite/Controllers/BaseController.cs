@@ -282,8 +282,8 @@ namespace CMSSite.Controllers
             }
             //the code of the images that will come on the mobile side. END
 
-            ViewBag.MetaTitle = "Turgut Aydın Holding";
-            ViewBag.MetaDescription = "Turgut Aydın Holding";
+            ViewBag.MetaTitle = "Aydın Grup";
+            ViewBag.MetaDescription = "Aydın Grup";
 
             ViewBag.Portals = contentPages.Where(x => x.ContentPageId == 136).OrderBy(o => o.OrderNo).ThenBy(o => o.Name).ToList();
 
